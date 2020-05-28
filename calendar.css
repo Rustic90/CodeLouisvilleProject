@@ -5,11 +5,6 @@ body {
     margin: 0;
 }
 /* Classes and Id's*/
-
-#newyear {
-    background-image: url('new-year.jpg');
-    width: 100%;
-}
 .main-header {
     width: 100%;
     height: 75px;
@@ -24,11 +19,8 @@ body {
     height: 75px;
     background-color: blue;
     color: white;
-<<<<<<< HEAD
     margin-top: 10px;
     text-align: center;
-=======
->>>>>>> parent of 05d75cc... Added blue opaque divs where countdowns will go
 }
 
 .container {
@@ -41,33 +33,50 @@ body {
     margin-top: 15px;
 }
 
-<<<<<<< HEAD
 .timer-box {
-    margin: auto;
     width: 85%;
-    height: 50px;
+    height: 60px;
     background-color: blue;
     position: absolute;
-    bottom: 0;
+    bottom: 4px;
     opacity: 0.8; 
     color: white;
     text-align: center;
+    z-index: 5;
+    margin-left: 7.5%;
 }
 
 .parent-box {
     position: relative;
 }
 
-=======
->>>>>>> parent of 05d75cc... Added blue opaque divs where countdowns will go
 /* Tag Selectors */
-.parent-box {
+img {
     width: 85%; height: 250px;
     border: 1px solid black;
 }
 
+
 /*Media Queries */
 @media (min-width: 600px)
+{
+    .container {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        width: 60%;
+        margin: auto;
+        grid-gap: 10px;
+    }
+
+    img {
+        width: 100%;
+    }
+    .timer-box {
+        width: 100%;
+        margin: 0;
+    }
+}
+@media (min-width: 1000px)
 {
     .container {
         display: grid;
@@ -77,11 +86,11 @@ body {
         grid-gap: 10px;
     }
 
-    .parent-box {
+    img {
         width: 100%;
     }
     .timer-box {
         width: 100%;
+        margin: 0;
     }
-
 }
