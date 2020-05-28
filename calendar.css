@@ -24,8 +24,11 @@ body {
     height: 75px;
     background-color: blue;
     color: white;
+<<<<<<< HEAD
     margin-top: 10px;
     text-align: center;
+=======
+>>>>>>> parent of 05d75cc... Added blue opaque divs where countdowns will go
 }
 
 .container {
@@ -38,6 +41,7 @@ body {
     margin-top: 15px;
 }
 
+<<<<<<< HEAD
 .timer-box {
     margin: auto;
     width: 85%;
@@ -54,6 +58,8 @@ body {
     position: relative;
 }
 
+=======
+>>>>>>> parent of 05d75cc... Added blue opaque divs where countdowns will go
 /* Tag Selectors */
 .parent-box {
     width: 85%; height: 250px;
