@@ -5,6 +5,11 @@ body {
     margin: 0;
 }
 /* Classes and Id's*/
+
+#newyear {
+    background-image: url('new-year.jpg');
+    width: 100%;
+}
 .main-header {
     width: 100%;
     height: 75px;
@@ -20,6 +25,7 @@ body {
     background-color: blue;
     color: white;
     margin-top: 10px;
+    text-align: center;
 }
 
 .container {
@@ -33,7 +39,8 @@ body {
 }
 
 .timer-box {
-    width: 100%;
+    margin: auto;
+    width: 85%;
     height: 50px;
     background-color: blue;
     position: absolute;
@@ -48,7 +55,7 @@ body {
 }
 
 /* Tag Selectors */
-img {
+.parent-box {
     width: 85%; height: 250px;
     border: 1px solid black;
 }
@@ -64,7 +71,10 @@ img {
         grid-gap: 10px;
     }
 
-    img {
+    .parent-box {
+        width: 100%;
+    }
+    .timer-box {
         width: 100%;
     }
 
