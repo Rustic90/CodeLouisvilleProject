@@ -7,13 +7,20 @@
     <link rel="stylesheet" href="calendar.css">
 </head>
 <body>
+    <!-- Main heading and navigation -->
     <header class="main-header">
-        <h1> Holiday Countdown Calendar </h1>
+        <h1> 2020 Holiday Countdown </h1>
+        <ul class="navigation">
+            <li><a href="index.html" style="text-decoration: underline;"> Home </a></li>
+            <li><a href="personaldate.html"> My Personal Dates </a></li>
+            <li class="last-link"><a href="contact.html"> Contact Us </a></li>
+        </ul>
     </header>
-    <div class="year-selection">
-        <button class="year-button"> 2020 </button>
-        <button class="year-button"> 2021 </button>
-    </div>
+
+    <!-- Main content of the page -->
+    <p class="content-header"> Do you get as excited about the holidays as I do? See how much longer until your favorite holiday below, 
+        or create a personal date of your own!
+    </p>
     <div class="container">
         <div id="newyear" class="parent-box">
             <img src="images/new-year.jpg" alt="New Years Day">
@@ -88,9 +95,12 @@
             </div>
         </div>
     </div>
+
+    <!-- Footer -->
     <footer class="main-footer">
-        footer will go here
+        Produced by Curtis Alcorn &copy 2020
     </footer>
+
     <script src="calendar.js"></script>
 </body>
 </html>

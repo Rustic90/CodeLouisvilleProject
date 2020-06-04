@@ -40,7 +40,7 @@ function updateDate() {
     document.querySelector("#christmas-countdown").innerHTML = calcDifference(christmasDay);
 }
 
-
+// Initially calls function upon before the 1st second happens
 updateDate();
 
 // Calls the updateDate function every second
