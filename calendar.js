@@ -15,7 +15,8 @@ const thanksgivingDay = new Date(2020, 10, 26);
 const christmasDay = new Date(2020, 11, 25);
 
 // Accepts a Holiday Parameter and Calculates the Difference Between That and the Current Date
-function calcDifference(holidayDate) {
+function calcDifference(holidayDate) 
+{
     var dateDiff = holidayDate.getTime() - currentDate.getTime();
     var daysDiff = Math.floor(dateDiff / (24*60*60*1000));
     var hoursDiff = Math.floor(dateDiff / (60*60*1000));
@@ -29,7 +30,8 @@ function calcDifference(holidayDate) {
 }
 
 // Creates a new current date object, calls difference function, then updates text
-function updateDate() {
+function updateDate() 
+{
     currentDate = new Date();
     document.querySelector("#independence-countdown").innerHTML = calcDifference(independenceDay);
     document.querySelector("#labor-countdown").innerHTML = calcDifference(laborDay);
@@ -45,3 +47,56 @@ updateDate();
 
 // Calls the updateDate function every second
 var t = setInterval(updateDate, 1000);
+
+// Shows Information for the Holiday of the Corresponding Tooltip Clicked
+function showInfo(selectedHoliday)
+{
+    if (selectedHoliday=='newyear')
+    {
+        alert("new years");
+    }
+    else if (selectedHoliday=='mlk')
+    {
+        alert("mlk");
+    }
+    else if (selectedHoliday=='president')
+    {
+        alert("president");
+    }
+    else if (selectedHoliday=='stpatrick')
+    {
+        alert("stpatrick");
+    }
+    else if (selectedHoliday=='memorial')
+    {
+        alert("memorial");
+    }
+    else if (selectedHoliday=='independence')
+    {
+        alert("independence");
+    }
+    else if (selectedHoliday=='labor')
+    {
+        alert("labor");
+    }
+    else if (selectedHoliday=='columbus')
+    {
+        alert("columbus");
+    }
+    else if (selectedHoliday=='halloween')
+    {
+        alert("halloween");
+    }
+    else if (selectedHoliday=='veterans')
+    {
+        alert("veterans");
+    }
+    else if (selectedHoliday=='thanksgiving')
+    {
+        alert("thanksgiving");
+    }
+    else if (selectedHoliday=='christmas')
+    {
+        alert("christmas");
+    }
+}
