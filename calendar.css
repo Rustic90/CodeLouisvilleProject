@@ -94,6 +94,10 @@ a:hover {
     text-decoration: underline;
 }
 
+form {
+    width: 50%;
+    margin: auto;
+}
 
 /*Media Queries */
 @media (min-width: 600px)

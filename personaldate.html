@@ -18,17 +18,31 @@
     </header>
 
     <!-- Main content of the page -->
-    
-    <div class="container">
-        <p> Content Here </p>
-        
+    <div class = "main">
+      <p> Sometimes we have our own dates that are special to us, whether it be birthdays, anniversary's, vacations, etc.</p>
+      <p> Create a custom date below and check back often for your countdown! You can have up to 3 custom holidays.</p>
     </div>
 
+    <form>
+        <fieldset>
+            <legend>Personal Date </legend><br>
+            <label for="event-name"> Event Name: </label>
+            <input type="text" id="event-name" ><br><br>
+            <label for="personal-date"> Date: </label>
+            <input type="date" id="event-date"><br><br>
+            <button type="button" onclick="createDate()"> Create Date </button>
+            <button type="button" onclick="clearDates()"> Clear All Dates </button>
+        </fieldset>
+    </form>
+
+    <div class="container">  
+        
+    </div>
     <!-- Footer -->
     <footer class="main-footer">
         Produced by Curtis Alcorn &copy 2020
     </footer>
 
-    <script src="calendar.js"></script>
+    <script src="personal.js"></script>
 </body>
 </html>
