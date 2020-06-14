@@ -53,50 +53,79 @@ function showInfo(selectedHoliday)
 {
     if (selectedHoliday=='newyear')
     {
-        alert("new years");
+        showModal();
+        document.querySelector(".modal-display").innerHTML = `<h1 style="text-decoration: underline;"> New Years Day </h1> <p> New Year's day occurrs on January 1st of every year. Many people use this time to set new goals and ambitions for themselves, also known as new year's resolutions. Mine this year was to get into Code Louisville and become a programmer :)</p>`;
     }
     else if (selectedHoliday=='mlk')
     {
-        alert("mlk");
+        showModal();
+        document.querySelector(".modal-display").innerHTML = "Information about the mlk holiday will go here.";
     }
     else if (selectedHoliday=='president')
     {
-        alert("president");
+        showModal();
+        document.querySelector(".modal-display").innerHTML = "Information about the president's day holiday will go here.";
     }
     else if (selectedHoliday=='stpatrick')
     {
-        alert("stpatrick");
+        showModal();
+        document.querySelector(".modal-display").innerHTML = "Information about the st patricks's holiday will go here.";
     }
     else if (selectedHoliday=='memorial')
     {
-        alert("memorial");
+        showModal();
+        document.querySelector(".modal-display").innerHTML = "Information about the memorial day holiday will go here.";
     }
     else if (selectedHoliday=='independence')
     {
-        alert("independence");
+        showModal();
+        document.querySelector(".modal-display").innerHTML = "Information about the independence day holiday will go here.";
     }
     else if (selectedHoliday=='labor')
     {
-        alert("labor");
+        showModal();
+        document.querySelector(".modal-display").innerHTML = "Information about the labor day holiday will go here.";
     }
     else if (selectedHoliday=='columbus')
     {
-        alert("columbus");
+        showModal();
+        document.querySelector(".modal-display").innerHTML = "Information about the columbus day holiday will go here.";
     }
     else if (selectedHoliday=='halloween')
     {
-        alert("halloween");
+        showModal();
+        document.querySelector(".modal-display").innerHTML = "Information about halloween will go here.";
     }
     else if (selectedHoliday=='veterans')
     {
-        alert("veterans");
+        showModal();
+        document.querySelector(".modal-display").innerHTML = "Information about the veteran's day holiday will go here.";
     }
     else if (selectedHoliday=='thanksgiving')
     {
-        alert("thanksgiving");
+        showModal();
+        document.querySelector(".modal-display").innerHTML = "Information about Thanksgiving will go here.";
     }
     else if (selectedHoliday=='christmas')
     {
-        alert("christmas");
+        showModal();
+        document.querySelector(".modal-display").innerHTML = "Information about Christmas will go here.";
     }
 }
+
+// Add a click event listener for the modal background to close out modal
+document.querySelector(".modal-background").addEventListener("click", hideModal);
+
+
+// Show Modal
+function showModal() 
+{
+    document.querySelector(".modal-background").style.display="block";
+    document.querySelector(".modal-display").style.display = "block";
+}
+// Function to hide modal
+function hideModal()
+{
+    document.querySelector(".modal-background").style.display="none";
+    document.querySelector(".modal-display").style.display="none";
+}   
