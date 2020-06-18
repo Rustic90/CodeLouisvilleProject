@@ -1,5 +1,8 @@
 
 let dates;
+let dateObject;
+let currentDate = new Date();
+let dateDiff;
 function createDate() 
 {
     let eventName = document.getElementById("event-name").value;
@@ -49,7 +52,17 @@ function displayDates()
         dates = JSON.parse(localStorage.getItem("dateList"));
         for (i=0; i<dates.length; i++)
         {
-            document.querySelector(".container").innerHTML += `<p>${dates[i].name} <br> ${dates[i].date}</p>`;
+            dateObject = new Date(dates[i].date)
+            dateDiff = Math.ceil((dateObject - currentDate) / 86400000);
+            console.log(dateDiff);
+            if (isNaN(dateDiff))
+            {
+                document.querySelector(".container").innerHTML += `<p>Date not set yet</p>`;
+            }
+            else 
+            {
+                document.querySelector(".container").innerHTML += `<p>${dates[i].name} <br> Date: ${dates[i].date}<br> Days Left: ${dateDiff}</p>`;
+            }
         }
     }
     
