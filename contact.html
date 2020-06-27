@@ -5,11 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Holiday Countdown Calendar </title>
     <link rel="stylesheet" href="calendar.css">
+    
 </head>
 <body>
     <!-- Main heading and navigation -->
     <header class="main-header">
-        <h1> 2020 Holiday Countdown </h1>
+        <div class="header-left">
+            <img src="Images/calendar-logo.png" class="logo">
+            <h1> 2020/21 Holiday Countdown </h1>
+        </div>
         <ul class="navigation">
             <li><a href="index.html"> Home </a></li>
             <li><a href="personaldate.html"> My Personal Dates </a></li>
@@ -19,8 +23,44 @@
 
     <!-- Main content of the page -->
     
-    <div class="container">
-        <p> Contact content here </p>
+    <div class="main">
+        <form class="contact-form" onsubmit="validate()">
+            <h1> Contact Form </h1>
+            <label for="name"> 
+                <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-person-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                </svg> 
+            </label>
+            <input type="text" id="name" placeholder="Full Name">
+            <br>
+            <br>
+            <label for="phone">
+                <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-telephone-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" d="M2.267.98a1.636 1.636 0 0 1 2.448.152l1.681 2.162c.309.396.418.913.296 1.4l-.513 2.053a.636.636 0 0 0 .167.604L8.65 9.654a.636.636 0 0 0 .604.167l2.052-.513a1.636 1.636 0 0 1 1.401.296l2.162 1.681c.777.604.849 1.753.153 2.448l-.97.97c-.693.693-1.73.998-2.697.658a17.47 17.47 0 0 1-6.571-4.144A17.47 17.47 0 0 1 .639 4.646c-.34-.967-.035-2.004.658-2.698l.97-.969z"/>
+                </svg>
+            </label>
+            <input type="text" id="phone" placeholder="Phone Number">
+            <br>
+            <br>
+            <label for="email">
+                <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-envelope-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555zM0 4.697v7.104l5.803-3.558L0 4.697zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757zm3.436-.586L16 11.801V4.697l-5.803 3.546z"/>
+                </svg>
+            </label>
+            <input type="email" id="email" placeholder="Email">
+            <br>
+            <br>
+            <label for="comments">
+                <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-chat-right-text-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" d="M16 2a2 2 0 0 0-2-2H2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h9.586a1 1 0 0 1 .707.293l2.853 2.853a.5.5 0 0 0 .854-.353V2zM3.5 3a.5.5 0 0 0 0 1h9a.5.5 0 0 0 0-1h-9zm0 2.5a.5.5 0 0 0 0 1h9a.5.5 0 0 0 0-1h-9zm0 2.5a.5.5 0 0 0 0 1h5a.5.5 0 0 0 0-1h-5z"/>
+                </svg>
+            </label>
+            <textarea id="comments" placeholder="Additional Comments"></textarea>
+            <br>
+            <br>
+            <input type="submit" value="Submit">
+            <input type="reset" value="Clear">
+        </form>
     </div>
 
     <!-- Footer -->
@@ -28,6 +68,6 @@
         Produced by Curtis Alcorn &copy 2020
     </footer>
 
-    <script src="calendar.js"></script>
+    <script src="contact.js"></script>
 </body>
 </html>

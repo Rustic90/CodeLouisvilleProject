@@ -1,11 +1,11 @@
 // Define Initial Date Objects 
 var currentDate = new Date();
 
-const newYearsDay = new Date(2020, 0, 1);
-const mlkDay = new Date(2020, 0, 20);
-const presidentsDay = new Date(2020, 1, 17);
-const stPatricksDay = new Date(2020, 2, 17);
-const memorialDay = new Date(2020, 4, 25);
+const newYearsDay = new Date(2021, 0, 1);
+const mlkDay = new Date(2021, 0, 18);
+const presidentsDay = new Date(2021, 1, 15);
+const stPatricksDay = new Date(2021, 2, 17);
+const memorialDay = new Date(2021, 4, 31);
 const independenceDay = new Date(2020, 6, 4);
 const laborDay = new Date(2020, 8, 7);
 const columbusDay = new Date(2020, 9, 12);
@@ -33,6 +33,11 @@ function calcDifference(holidayDate)
 function updateDate() 
 {
     currentDate = new Date();
+    document.querySelector("#new-year-countdown").innerHTML = calcDifference(newYearsDay);
+    document.querySelector("#mlk-countdown").innerHTML = calcDifference(mlkDay);
+    document.querySelector("#presidents-countdown").innerHTML = calcDifference(presidentsDay);
+    document.querySelector("#st-patricks-countdown").innerHTML = calcDifference(stPatricksDay);
+    document.querySelector("#memorial-countdown").innerHTML = calcDifference(memorialDay);
     document.querySelector("#independence-countdown").innerHTML = calcDifference(independenceDay);
     document.querySelector("#labor-countdown").innerHTML = calcDifference(laborDay);
     document.querySelector("#columbus-countdown").innerHTML = calcDifference(columbusDay);

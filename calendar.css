@@ -12,13 +12,15 @@ body {
     height: 125px;
     background-color: blue;
     color: white;
-    padding-top: 3px;
-    margin-bottom: 15px;
     display: flex;
     flex-direction: column;
     text-align: center;
     justify-content: center;
-    border-bottom: 5px solid red;
+    border-bottom: 5px solid firebrick;
+}
+
+.header-left {
+    margin: auto;
 }
 
 .main-footer {
@@ -106,6 +108,58 @@ body {
     text-decoration: underline;
 }
 
+.resetButton {
+    background-color: firebrick;
+}
+
+.logo {
+ 
+    width: 50px; 
+    height: 50px; 
+    margin-right: 5px;
+    margin-top: 10px;
+    float: left;
+    border: none;
+}
+
+.main-header h1 {
+    display: inline-block;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+
+.contact-form {
+    border: 1px solid black;
+    text-align: left;
+    padding-bottom: 10px;
+    padding-left: 25px;
+    margin-top: 20px;
+   
+}
+
+.contact-form input[type="text"], input[type="email"], textarea {
+    border: none;
+    border-bottom: 1px dotted black;
+}
+
+.contact-form input[type="submit"] {
+    width: 150px;
+    height: 50px;
+    background-color: blue;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+}
+
+.contact-form input[type="reset"] {
+    width: 150px;
+    height: 50px;
+    background-color: firebrick;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;  
+}
 /* Tag Selectors */
 img {
     width: 85%; 
@@ -135,6 +189,20 @@ form {
     margin: auto;
 }
 
+button {
+background-color: blue;
+color: white;
+width: 75px;
+height: 50px;
+font-weight: bold;
+line-height: 1.25em;
+}
+
+ul {
+    margin-top: 0;
+}
+
+
 /*Media Queries */
 @media (min-width: 600px)
 {
@@ -146,6 +214,7 @@ form {
         grid-gap: 10px;
     }
 
+    
     img {
         width: 100%;
     }
@@ -185,6 +254,9 @@ form {
         height: 75px;
         flex-direction: row;
         justify-content: space-around;
+    }
+    .header-left {
+        margin:0;
     }
     .navigation {
         margin-top: 35px;
