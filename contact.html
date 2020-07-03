@@ -5,25 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Holiday Countdown Calendar </title>
     <link rel="stylesheet" href="calendar.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
     
 </head>
 <body>
     <!-- Main heading and navigation -->
     <header class="main-header">
         <div class="header-left">
-            <img src="Images/calendar-logo.png" class="logo">
-            <h1> 2020/21 Holiday Countdown </h1>
+            <a href="index.html"><img src="Images/calendar-logo.png" class="logo"></a>
+            <h1> Holiday Celebration </h1>
         </div>
         <ul class="navigation">
-            <li><a href="index.html"> Home </a></li>
-            <li><a href="personaldate.html"> My Personal Dates </a></li>
-            <li class="last-link"><a href="contact.html" style="text-decoration: underline;"> Contact Us </a></li>
+            <li><a href="home.html"> Home </a></li>
+            <li><a href="personaldate.html"> Personal Dates </a></li>
+            <li><a href="games.html"> Holiday Games </a></li>
+            <li class="last-link"><a href="contact.html" style="text-decoration: underline;"> Contact </a></li>
         </ul>
     </header>
 
     <!-- Main content of the page -->
     
     <div class="main">
+        <h2> Have Feedback For Us? </h2>
+        <p> I want this site to be a place people enjoy using for all their countdown excitement! </p>
+        <p> Have a problem with functionality or a suggestion to improve the site? I'd love to hear from you. Submit the form below with your ideas.</p>
         <form class="contact-form" onsubmit="validate()">
             <h1> Contact Form </h1>
             <label for="name"> 
@@ -62,7 +67,7 @@
             <input type="reset" value="Clear">
         </form>
     </div>
-
+    <br><br><br><br><br>
     <!-- Footer -->
     <footer class="main-footer">
         Produced by Curtis Alcorn &copy 2020

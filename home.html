@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Holiday Countdown Calendar </title>
+    <link rel="stylesheet" href="calendar.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+</head>
+<body>
+
+    <!-- Creates an invisiible modal div that gets activated by clicking a tooltip -->
+    <div class="modal-background">
+    </div>
+    <div class="modal-display">
+    </div>
+    <!-- Main heading and navigation -->
+    <header class="main-header" id="top-of-page">
+        <div class="header-left">
+            <a href="index.html"><img src="Images/calendar-logo.png" class="logo"></a>
+            <h1> Holiday Celebration </h1>
+        </div>
+        <ul class="navigation">
+            <li><a href="home.html" style="text-decoration: underline;"> Home </a></li>
+            <li><a href="personaldate.html"> Personal Dates </a></li>
+            <li><a href="games.html"> Holiday Games </a></li>
+            <li class="last-link"><a href="contact.html"> Contact </a></li>
+        </ul>
+    </header>
+
+    <!-- Main content of the page -->
+    <p class="content-header"> Do you get as excited about the holidays as I do? See how much longer until your favorite holiday below, 
+        or create a personal date of your own! <br><br> <span style="font-style: italic; font-weight: bold; text-decoration: underline;">Note:</span> If the holiday has already happened this year, the countdown will show the 2021
+        countdown instead.
+    </p>
+    <div class="container">
+        <div id="newyear" class="parent-box">
+            <img src="images/tooltip.png" class="tooltip" onclick="showInfo('newyear')">
+            <img src="images/new-year.jpg" alt="New Years Day">
+            <div class="timer-box">
+                <h3 id="new-year-countdown"> January 1, 2020</h3>
+            </div>
+        </div>
+        <div id="mlk" class="parent-box">
+            <img src="images/tooltip.png" class="tooltip" onclick="showInfo('mlk')">
+            <img src="images/mlk-day.jpg" alt="Martin Luther King Jr Day">
+            <div class="timer-box">
+                <h3 id="mlk-countdown"> January 20, 2020 </h3>
+            </div>
+        </div>
+        <div id="presidents" class="parent-box">
+            <img src="images/tooltip.png" class="tooltip" onclick="showInfo('president')">
+            <img src="images/presidents-day.jpeg" alt="President's Day">
+            <div class="timer-box">
+                <h3 id="presidents-countdown"> February 17, 2020 </h3>
+            </div>
+        </div>
+        <div id="st-patricks" class="parent-box">
+            <img src="images/tooltip.png" class="tooltip" onclick="showInfo('stpatrick')">
+            <img src="images/st-patricks-day.jpg" alt="Saint Patricks Day">
+            <div class="timer-box">
+                <h3 id="st-patricks-countdown"> March 17, 2020 </h3>
+            </div>
+        </div>
+        <div id="memorial" class="parent-box">
+            <img src="images/tooltip.png" class="tooltip" onclick="showInfo('memorial')">
+            <img src="images/memorial-day.jpg" alt="Memorial Day">
+            <div class="timer-box">
+                <h3 id="memorial-countdown"> May 25, 2020 </h3>
+            </div>
+        </div>
+        <div id="independence" class="parent-box">
+            <img src="images/tooltip.png" class="tooltip" onclick="showInfo('independence')">
+            <img src="images/independence-day.jpg" alt="independence Day">
+            <div class="timer-box">
+                <h3 id="independence-countdown"> July 4, 2020 </h3>
+            </div>
+        </div>
+        <div id="labor" class="parent-box">
+            <img src="images/tooltip.png" class="tooltip" onclick="showInfo('labor')">
+            <img src="images/labor-day.jpg" alt="Labor Day">
+            <div class="timer-box">
+                <h3 id="labor-countdown"> September 7, 2020 </h3>
+            </div>
+        </div>
+        <div id="columbus" class="parent-box">
+            <img src="images/tooltip.png" class="tooltip" onclick="showInfo('columbus')">
+            <img src="images/columbus-day.jpg" alt="Columbus Day">
+            <div class="timer-box">
+                <h3 id="columbus-countdown"> October 12, 2020 </h3>
+            </div>
+        </div>
+        <div id="halloween" class="parent-box">
+            <img src="images/tooltip.png" class="tooltip" onclick="showInfo('halloween')">
+            <img src="images/halloween-day.jpg" alt="Halloween">
+            <div class="timer-box">
+                <h3 id="halloween-countdown"> October 31, 2020 </h3>
+            </div>
+        </div>
+        <div id="veterans" class="parent-box">
+            <img src="images/tooltip.png" class="tooltip" onclick="showInfo('veterans')">
+            <img src="images/veterans-day.jpg" alt="Veteran's Day">
+            <div class="timer-box">
+                <h3 id="veterans-countdown"> November 11, 2020 </h3>
+            </div>
+        </div>
+        <div id="thanksgiving" class="parent-box">
+            <img src="images/tooltip.png" class="tooltip" onclick="showInfo('thanksgiving')">
+            <img src="images/thanksgiving-day.jpg" alt="Thanksgiving Day">
+            <div class="timer-box">
+                <h3 id="thanksgiving-countdown" > November 26, 2020 </h3>
+            </div>
+        </div>
+        <div id="christmas" class="parent-box">
+            <img src="images/tooltip.png" class="tooltip" onclick="showInfo('christmas')">
+            <img src="images/christmas-day.jpg" alt="Christmas Day">
+            <div class="timer-box">
+                <h3 id="christmas-countdown"> December 25, 2020 </h3>
+            </div>
+        </div>
+        <br>
+    </div>
+    <a href="#top-of-page" style="color: black;"> Back to Top </a>
+    <br><br><br><br><br><br>
+    <!-- Footer -->
+    <footer class="main-footer">
+        Produced by Curtis Alcorn &copy 2020
+    </footer>
+
+    <script src="calendar.js"></script>
+</body>
+</html>

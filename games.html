@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Holiday Countdown Calendar </title>
+    <link rel="stylesheet" href="calendar.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+</head>
+<body>
+    <!-- Main heading and navigation -->
+    <header class="main-header">
+        <div class="header-left">
+            <a href="index.html"><img src="Images/calendar-logo.png" class="logo"></a>
+            <h1> Holiday Celebration </h1>
+        </div>
+        <ul class="navigation">
+            <li><a href="home.html"> Home </a></li>
+            <li><a href="personaldate.html" > Personal Dates </a></li>
+            <li><a href="games.html" style="text-decoration: underline;"> Holiday Games </a></li>
+            <li class="last-link"><a href="contact.html"> Contact </a></li>
+        </ul>
+    </header>
+
+    <!-- Main content of the page -->
+    <div class = "main">
+        <h2> Holiday Mini-Games </h2>
+        <p> Choose from the list of holiday mini-games below and have some fun!</p>
+        <select id="game-list" onchange="selectGame()">
+            <option> Select a Game </option>
+            <optgroup label="Winter Games"> 
+            <option value="lost-presents"> The Lost Presents </option>
+            </optgroup>
+        </select>
+    </div>
+    <!-- Footer -->
+    <footer class="main-footer">
+        Produced by Curtis Alcorn &copy 2020
+    </footer>
+
+    <script src="games.js"></script>
+</body>
+</html>

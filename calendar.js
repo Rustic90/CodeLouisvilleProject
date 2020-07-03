@@ -134,3 +134,13 @@ function hideModal()
     document.querySelector(".modal-background").style.display="none";
     document.querySelector(".modal-display").style.display="none";
 }   
+
+function showDropDown() 
+{
+    document.querySelector(".drop-down-menu").style.display="block";
+}
+
+function hideDropDown()
+{
+    document.querySelector(".drop-down-menu").style.display="none";
+}

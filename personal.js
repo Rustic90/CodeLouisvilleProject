@@ -5,6 +5,8 @@ let currentDate = new Date();
 let dateDiff;
 function createDate() 
 {
+if(document.getElementById("event-name").value != "" && document.getElementById("event-date").value != "")
+{
     let eventName = document.getElementById("event-name").value;
     let eventDate = document.getElementById("event-date").value;
     if (localStorage.getItem("dateList") == null)
@@ -35,6 +37,11 @@ function createDate()
             alert("All event slots are full. To create more, please clear the others first.");
         }
     }
+}
+else 
+{
+    alert("Please enter both a name and a date.");
+}
     displayDates();
     
 }
@@ -54,7 +61,6 @@ function displayDates()
         {
             dateObject = new Date(dates[i].date)
             dateDiff = Math.ceil((dateObject - currentDate) / 86400000);
-            console.log(dateDiff);
             if (isNaN(dateDiff))
             {
                 document.querySelector(".container").innerHTML += `<p>Date not set yet</p>`;
