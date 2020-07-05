@@ -44,6 +44,11 @@ body {
     text-align: center;
 }
 
+.main {
+    text-align: left;
+    width: 70%;
+    margin: auto;
+}
 .content-header {
     text-align: center;
 }
@@ -168,6 +173,16 @@ body {
     font-weight: bold;  
 }
 
+
+#keyboard button {
+    width: 30px;
+    height: 30px;
+    padding: 5px;
+    color: white;
+}
+#word label {
+    padding: 5px;
+}
 /* Tag Selectors */
 img {
     width: 85%; 
@@ -182,7 +197,7 @@ li {
     padding-right: 5px;
     padding-bottom: 10px;
     padding-top: 10px;
-    border-right: 2px solid white;
+    border-right: 5px solid blue;
     background-color: firebrick;
 }
 
@@ -196,7 +211,7 @@ a:hover {
 }
 
 form {
-    width: 60%;
+    width: 70%;
     margin: auto;
 }
 
@@ -254,6 +269,14 @@ ul {
         grid-gap: 10px;
     }
 
+    .one-to-three {
+        display: grid;
+        grid-template-columns: 33.3% 33.3% 33.3%;
+        width: 30%;
+        margin: auto;
+        grid-gap: 10px;
+    }
+
     img {
         width: 100%;
     }
@@ -277,6 +300,9 @@ ul {
         left: 35%;
     }
     form {
+        width: 30%;
+    }
+    .main {
         width: 30%;
     }
     

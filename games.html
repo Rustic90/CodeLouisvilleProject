@@ -24,15 +24,22 @@
 
     <!-- Main content of the page -->
     <div class = "main">
-        <h2> Holiday Mini-Games </h2>
-        <p> Choose from the list of holiday mini-games below and have some fun!</p>
-        <select id="game-list" onchange="selectGame()">
-            <option> Select a Game </option>
-            <optgroup label="Winter Games"> 
-            <option value="lost-presents"> The Lost Presents </option>
-            </optgroup>
-        </select>
+        <h2> Holiday Hangman </h2>
+        
+
+    <!-- Creates empty canvas to display Javascript game after selecting one from the list -->
+        <canvas id="gameBoard" width="200" height="200">
+        </canvas>
+        <div id="hint">
+        </div>
+        <div id="word">
+           
+        </div>
+        <div id="keyboard">
+
+        </div>
     </div>
+    <br><br><br><br><br><br>
     <!-- Footer -->
     <footer class="main-footer">
         Produced by Curtis Alcorn &copy 2020

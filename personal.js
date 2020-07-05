@@ -48,11 +48,11 @@ else
 
 function displayDates()
 {
-    document.querySelector(".container").innerHTML = "";
+    document.querySelector(".one-to-three").innerHTML = "";
     if (localStorage.getItem("dateList") == null) 
     {
-        document.querySelector(".container").innerHTML = `<p></p>`;
-        document.querySelector(".container").innerHTML += `<p>No Events Created Yet</p>`; 
+        document.querySelector(".one-to-three").innerHTML = `<p></p>`;
+        document.querySelector(".one-to-three").innerHTML += `<p>No Events Created Yet</p>`; 
     }
     else
     {
@@ -63,11 +63,11 @@ function displayDates()
             dateDiff = Math.ceil((dateObject - currentDate) / 86400000);
             if (isNaN(dateDiff))
             {
-                document.querySelector(".container").innerHTML += `<p>Date not set yet</p>`;
+                document.querySelector(".one-to-three").innerHTML += `<p>Date not set yet</p>`;
             }
             else 
             {
-                document.querySelector(".container").innerHTML += `<p>${dates[i].name} <br> Date: ${dates[i].date}<br> Days Left: ${dateDiff}</p>`;
+                document.querySelector(".one-to-three").innerHTML += `<p>${dates[i].name} <br> Date: ${dates[i].date}<br> Days Left: ${dateDiff}</p>`;
             }
         }
     }
