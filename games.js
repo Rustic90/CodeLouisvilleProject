@@ -7,11 +7,16 @@ canvas.style.border="1px solid black";
 let wordList = 
 [
     {holiday: "New Year", word: "resolution"},
-    {holiday: "Christmas", word: "ornament"},
-    {holiday: "4th of July", word: "fireworks"},
-    {holiday: "Easter", word: "bunny"},
+    {holiday: "Martin Luther King Jr Day", word: "rights"},
+    {holiday: "President's Day", word: "washington"},
     {holiday: "St Patrick's Day", word: "lucky"},
+    {holiday: "Easter", word: "bunny"},
+    {holiday: "Memorial Day", word: "heroes"},
+    {holiday: "4th of July", word: "fireworks"},
     {holiday: "Halloween", word: "costume"},
+    {holiday: "Thanksgiving", word: "dinner"},
+    {holiday: "Christmas", word:"santa"},
+    {holiday: "Christmas", word: "ornament"},
 ];
 
 // Variables for Game Logic
@@ -48,6 +53,7 @@ for (i=0;i<alphabet.length;i++)
 // Logic when a player clicks a letter 
 function makeGuess(letterChoice)
 {
+    document.getElementById("guessed-letters").innerHTML += letterChoice + ", ";
     if (word.includes(letterChoice))
     {
         for (j=0;j<word.length;j++) 
@@ -60,6 +66,7 @@ function makeGuess(letterChoice)
             if (!wordArray.includes("-"))
             {
                 setTimeout(function(){alert("You Guessed The Word Correctly!")}, 300);
+                break;
             }
         }
     }
