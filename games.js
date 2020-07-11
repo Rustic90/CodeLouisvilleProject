@@ -7,6 +7,7 @@ canvas.style.border="1px solid black";
 let wordList = 
 [
     {holiday: "New Year", word: "resolution"},
+    {holiday: "Martin Luther King Jr Day", word: "protests"},
     {holiday: "Martin Luther King Jr Day", word: "rights"},
     {holiday: "President's Day", word: "washington"},
     {holiday: "St Patrick's Day", word: "lucky"},
@@ -14,9 +15,12 @@ let wordList =
     {holiday: "Memorial Day", word: "heroes"},
     {holiday: "4th of July", word: "fireworks"},
     {holiday: "Halloween", word: "costume"},
+    {holiday: "Halloween", word: "candy"},
+    {holiday: "Veteran's Day", word: "soldiers"},
     {holiday: "Thanksgiving", word: "dinner"},
+    {holiday: "Thanksgiving", word: "turkey"},
     {holiday: "Christmas", word:"santa"},
-    {holiday: "Christmas", word: "ornament"},
+    {holiday: "Christmas", word: "ornament"}
 ];
 
 // Variables for Game Logic
