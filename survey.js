@@ -31,5 +31,20 @@ function closeSurvey()
 function submitSurvey() 
 {
     //localStorage.setItem("takenSurvey", "yes"); Uncomment once feature is coded
-    alert("Survey feature coming soon");
+    var choice;
+    var surveyChoice = document.querySelectorAll('input[name="favorite-holiday"]');
+    for (i=0; i<surveyChoice.length;i++)
+    {
+        if (surveyChoice[i].checked)
+        {
+            choice = surveyChoice[i].value;
+            break;
+        }
+    }
+    var xhr = new XMLHttpRequest();
+    xhr.onload = function(){
+        document.getElementById("survey").innerHTML = "Thank you for voting!<br> Ability to see voting results coming soon." + this.responseText;
+    };
+    xhr.open("GET", "survey.php?q=" + choice);
+    xhr.send();
 }
