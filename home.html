@@ -127,7 +127,20 @@
     <footer class="main-footer">
         Produced by Curtis Alcorn &copy 2020
     </footer>
-
+<div id="survey">
+    <h1> What's your favorite holiday?</h1>
+    <form>
+        <input type="radio" name="favorite-holiday" value="Christmas"> Christmas <br>
+        <input type="radio" name="favorite-holiday" value="Halloween"> Halloween <br>
+        <input type="radio" name="favorite-holiday" value="Thanksgiving"> Thanksgiving <br>
+        <input type="radio" name="favorite-holiday" value="Independence"> 4th of July <br>
+        <input type="radio" name="favorite-holiday" value="Other"> Other <br><br>
+        <button type="button" onclick="submitSurvey()"> Vote</button>
+    </form>
+    <br>
+    <a href="#" onclick="closeSurvey()"> No Thanks </a>
+</div>
     <script src="calendar.js"></script>
+    <script src="survey.js"></script>
 </body>
 </html>

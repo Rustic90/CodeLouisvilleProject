@@ -194,6 +194,24 @@ body {
 #hint, #word {
     font-size: 1.5rem;
 }
+
+#survey {
+    width: 300px;
+    height: 400px;
+    border: 2px solid black;
+    position: fixed;
+    left: -302px;
+    top: 200px;
+    background-color: #eee; 
+    z-index: 50;
+    text-align: left;
+    padding: 10px;
+    color: blue;
+}
+#survey a {
+    color: inherit;
+    text-decoration: underline;
+}
 /* Tag Selectors */
 img {
     width: 85%; 
