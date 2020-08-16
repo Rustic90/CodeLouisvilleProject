@@ -30,7 +30,7 @@ function closeSurvey()
 // Processes completed survey (still in development)
 function submitSurvey() 
 {
-    //localStorage.setItem("takenSurvey", "yes"); Uncomment once feature is coded
+    localStorage.setItem("takenSurvey", "yes"); 
     var choice;
     var surveyChoice = document.querySelectorAll('input[name="favorite-holiday"]');
     for (i=0; i<surveyChoice.length;i++)
